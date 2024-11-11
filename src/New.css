@@ -1,0 +1,182 @@
+/*! INPUT : */
+
+.text-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.styled-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.styled-input:focus {
+    border-color: rgb(0, 123, 255);
+}
+
+.display-text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+/*! CARD : */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-address {
+    font-size: 1rem;
+    color: rgb(102, 102, 102);
+    margin-top: 5px;
+}
+
+/*! Roler Game : */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #BC2A2A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/*! Controle */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.livre-list {
+    padding: 0;
+    margin: 0;
+}
+
+.livre-item {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.livre-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.livre-author, .livre-year {
+    color: #666;
+}
